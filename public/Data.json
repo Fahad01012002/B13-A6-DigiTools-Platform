@@ -8,6 +8,7 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "icon": "pen-tool",
+    "image": "../../../assets/products/writing_2327400 1.png",
     "features": [
       "Unlimited AI generations",
       "50+ writing templates",
@@ -23,6 +24,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "icon": "palette",
+    "image": "../../../assets/products/design-tool.png",
     "features": [
       "2000+ templates",
       "Monthly updates",
@@ -38,6 +40,7 @@
     "tag": "New",
     "tagType": "new",
     "icon": "camera",
+    "image": "../../../assets/products/camera_8775444 1.png",
     "features": [
       "10M+ assets",
       "Commercial use",
@@ -53,6 +56,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "icon": "settings",
+    "image": "../../../assets/products/operation.png",
     "features": [
       "50+ automations",
       "API access",
@@ -68,6 +72,7 @@
     "tag": "New",
     "tagType": "new",
     "icon": "file-text",
+    "image": "../../../assets/products/portfolio.png",
     "features": [
       "100+ templates",
       "ATS optimization",
@@ -83,6 +88,7 @@
     "tag": "Best Seller",
     "tagType": "best-seller",
     "icon": "share-2",
+    "image": "../../../assets/products/social-media.png",
     "features": [
       "5000+ assets",
       "Scheduler included",

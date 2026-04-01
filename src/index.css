@@ -7,3 +7,26 @@
 .manrope{
     font-family: "Manrope", sans-serif;
 }
+
+.badge_warning{
+    background-color: #fb7743;
+    color: white;
+    padding: 10px 16px 10px 16px;
+    font-size: 14px;
+    text-align: end;
+}
+
+.badge_success{
+    background-color: #069c45;
+    color: rgb(255, 255, 255);
+    padding: 10px 16px 10px 16px;
+    font-size: 14px;
+
+}
+
+.badge_purple{
+    background-color: #df2edf;
+    color: rgb(255, 255, 255);
+    padding: 10px 16px 10px 16px;
+    font-size: 14px;
+}
