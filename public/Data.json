@@ -1,82 +1,92 @@
 [
   {
     "id": 1,
-    "name": "Basic Gym Plan",
-    "description": "Access to gym equipment and locker facilities.",
-    "price": 20,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": 29,
     "period": "monthly",
-    "tag": "popular",
-    "tagType": "popular",
-    "icon": "dumbbell"
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "icon": "pen-tool",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ]
   },
   {
     "id": 2,
-    "name": "Premium Gym Plan",
-    "description": "Full access including group classes and sauna.",
-    "price": 50,
-    "period": "monthly",
-    "tag": "best seller",
-    "tagType": "best seller",
-    "icon": "crown"
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+    "price": 49,
+    "period": "one-time",
+    "tag": "Popular",
+    "tagType": "popular",
+    "icon": "palette",
+    "features": [
+      "2000+ templates",
+      "Monthly updates",
+      "Commercial license"
+    ]
   },
   {
     "id": 3,
-    "name": "Annual Fitness Plan",
-    "description": "Yearly membership with all premium benefits.",
-    "price": 500,
-    "period": "yearly",
-    "tag": "save",
-    "tagType": "popular",
-    "icon": "calendar"
+    "name": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "icon": "camera",
+    "features": [
+      "10M+ assets",
+      "Commercial use",
+      "No attribution"
+    ]
   },
   {
     "id": 4,
-    "name": "Personal Training Session",
-    "description": "One-on-one session with a professional trainer.",
-    "price": 30,
-    "period": "one-time",
-    "tag": "new",
-    "tagType": "new",
-    "icon": "user"
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+    "price": 79,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "icon": "settings",
+    "features": [
+      "50+ automations",
+      "API access",
+      "Custom workflows"
+    ]
   },
   {
     "id": 5,
-    "name": "Yoga Classes",
-    "description": "Relaxing yoga sessions for flexibility and peace.",
-    "price": 25,
-    "period": "monthly",
-    "tag": "trending",
-    "tagType": "popular",
-    "icon": "leaf"
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes and cover letters that land interviews.",
+    "price": 15,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "icon": "file-text",
+    "features": [
+      "100+ templates",
+      "ATS optimization",
+      "Export to PDF"
+    ]
   },
   {
     "id": 6,
-    "name": "Cardio Blast Program",
-    "description": "High-intensity cardio workouts for fat loss.",
-    "price": 15,
+    "name": "Social Media Content Kit",
+    "description": "Complete toolkit for creating engaging social media content across all platforms.",
+    "price": 39,
     "period": "monthly",
-    "tag": "hot",
-    "tagType": "popular",
-    "icon": "activity"
-  },
-  {
-    "id": 7,
-    "name": "Diet Consultation",
-    "description": "Personalized diet plan from a nutrition expert.",
-    "price": 40,
-    "period": "one-time",
-    "tag": "recommended",
-    "tagType": "best seller",
-    "icon": "apple"
-  },
-  {
-    "id": 8,
-    "name": "Home Workout Plan",
-    "description": "Custom workout routine you can do at home.",
-    "price": 10,
-    "period": "one-time",
-    "tag": "new",
-    "tagType": "new",
-    "icon": "home"
+    "tag": "Best Seller",
+    "tagType": "best-seller",
+    "icon": "share-2",
+    "features": [
+      "5000+ assets",
+      "Scheduler included",
+      "Analytics dashboard"
+    ]
   }
 ]
