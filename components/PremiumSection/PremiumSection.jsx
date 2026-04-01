@@ -1,11 +1,12 @@
 import { PackagePlus } from 'lucide-react';
-import React from 'react';
+import React, { useState } from 'react';
 
 const PremiumSection = () => {
 
-    const handleButton = ()=> {
-        
-    }
+    const [handleButton , setHandleButton] = useState('products');
+    // const handleButton = ()=> {
+
+    // }
 
     return (
         <div className='space-y-3'>
@@ -13,9 +14,9 @@ const PremiumSection = () => {
                 <h2 className='font-extrabold text-[48px]'>Premium Digital Tools</h2>
                 <p className='text-[#627382] leading-5'>Choose from our curated collection of premium digital products designed <br /> to boost your productivity and creativity.</p>
             </div>
-            <div className='text-center'>
-                <button onClick={() => handleButton()} className='btn'>Products</button>
-                <button className='btn'>Cart ( 0 ) </button>
+            <div className='text-center space-x-2'>
+                <button onClick={() => setHandleButton('products')} className={`btn rounded-[20px] ${handleButton === 'products' ? 'bg-[#4F39F6] text-white' : "bg-white"}`}>Products</button>
+                <button onClick={() => setHandleButton('carts')} className={`btn rounded-[20px] ${handleButton === 'carts' ? 'bg-[#4F39F6] text-white' : "bg-white"}`}>Cart ( 0 ) </button>
             </div>
         </div>
     );
