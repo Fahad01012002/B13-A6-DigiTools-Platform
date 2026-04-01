@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Basic Gym Plan",
+    "description": "Access to gym equipment and locker facilities.",
+    "price": 20,
+    "period": "monthly",
+    "tag": "popular",
+    "tagType": "popular",
+    "icon": "dumbbell"
+  },
+  {
+    "id": 2,
+    "name": "Premium Gym Plan",
+    "description": "Full access including group classes and sauna.",
+    "price": 50,
+    "period": "monthly",
+    "tag": "best seller",
+    "tagType": "best seller",
+    "icon": "crown"
+  },
+  {
+    "id": 3,
+    "name": "Annual Fitness Plan",
+    "description": "Yearly membership with all premium benefits.",
+    "price": 500,
+    "period": "yearly",
+    "tag": "save",
+    "tagType": "popular",
+    "icon": "calendar"
+  },
+  {
+    "id": 4,
+    "name": "Personal Training Session",
+    "description": "One-on-one session with a professional trainer.",
+    "price": 30,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "icon": "user"
+  },
+  {
+    "id": 5,
+    "name": "Yoga Classes",
+    "description": "Relaxing yoga sessions for flexibility and peace.",
+    "price": 25,
+    "period": "monthly",
+    "tag": "trending",
+    "tagType": "popular",
+    "icon": "leaf"
+  },
+  {
+    "id": 6,
+    "name": "Cardio Blast Program",
+    "description": "High-intensity cardio workouts for fat loss.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "hot",
+    "tagType": "popular",
+    "icon": "activity"
+  },
+  {
+    "id": 7,
+    "name": "Diet Consultation",
+    "description": "Personalized diet plan from a nutrition expert.",
+    "price": 40,
+    "period": "one-time",
+    "tag": "recommended",
+    "tagType": "best seller",
+    "icon": "apple"
+  },
+  {
+    "id": 8,
+    "name": "Home Workout Plan",
+    "description": "Custom workout routine you can do at home.",
+    "price": 10,
+    "period": "one-time",
+    "tag": "new",
+    "tagType": "new",
+    "icon": "home"
+  }
+]

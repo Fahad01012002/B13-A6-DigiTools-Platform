@@ -1,5 +1,7 @@
-import { PackagePlus } from 'lucide-react';
+import { CardSim, PackagePlus } from 'lucide-react';
 import React, { useState } from 'react';
+import AvailableCard from './AvailableCard/AvailableCard';
+import CartsCard from './CartCard/CartsCard';
 
 const PremiumSection = () => {
 
@@ -18,6 +20,10 @@ const PremiumSection = () => {
                 <button onClick={() => setHandleButton('products')} className={`btn rounded-[20px] ${handleButton === 'products' ? 'bg-[#4F39F6] text-white' : "bg-white"}`}>Products</button>
                 <button onClick={() => setHandleButton('carts')} className={`btn rounded-[20px] ${handleButton === 'carts' ? 'bg-[#4F39F6] text-white' : "bg-white"}`}>Cart ( 0 ) </button>
             </div>
+
+            {
+                handleButton === 'products' ? <AvailableCard /> : <CartsCard />
+            }
         </div>
     );
 };
