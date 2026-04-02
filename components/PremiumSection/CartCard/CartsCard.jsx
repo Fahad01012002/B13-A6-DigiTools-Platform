@@ -23,12 +23,15 @@ const CartsCard = ({ cartsCard, setCartsCard }) => {
     if (cartsCard.length === 0) {
         return (
             <div className='border border-gray-200 p-10 my-10 rounded-xl shadow-xs'>
-                <h2 className="flex justify-center items-center gap-5 text-3xl">
-                    Your cart is empty <ShoppingCart className='text-3xl'/>
-                </h2>
+                <div className='font-bold mb-20'>
+                    Your Cart
+                </div>
+                <div className='flex justify-center items-center mb-4'><ShoppingCart size={100} /></div>
+                <h2 className='text-center text-2xl'>Your cart is empty</h2>
+
             </div>
-            );
-            
+        );
+
     }
 
     return (
@@ -51,7 +54,7 @@ const CartsCard = ({ cartsCard, setCartsCard }) => {
                     </h2>
                     <h1 className='font-bold '>${totalPrice}</h1>
                 </div>
-                <button onClick={() => removeCartCard()} className='btn bg-[#4F39F6] btn-block rounded-full text-white '>Proceed To Checkout</button>
+                <button onClick={() => removeCartCard()} className='btn bg-linear-to-r from-[#4F39F6] to-[#9514FA] btn-block rounded-full text-white '>Proceed To Checkout</button>
             </div>
         </div>
     );

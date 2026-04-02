@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
-const CardDisplay = ({cartsCard , data , setCartsCard }) => {
+const CardDisplay = ({ cartsCard, data, setCartsCard }) => {
 
     const handleCartCard = (data) => {
-        setCartsCard([...cartsCard , data]);
+        setCartsCard([...cartsCard, data]);
+        setIsSelected(true);
+
+        toast.success('Card added to the cart');
     }
+    const [isSelected, setIsSelected] = useState(false);
 
     return (
         <div className=''>
@@ -42,7 +47,25 @@ const CardDisplay = ({cartsCard , data , setCartsCard }) => {
                     </ul>
 
                     <div className="mt-6">
-                        <button onClick={() => handleCartCard(data)} className="btn btn-block rounded-full bg-[#4F39F6] text-white">Buy Now</button>
+                        <button
+                            onClick={() => handleCartCard(data)}
+                            className={`
+            btn btn-block rounded-full 
+            text-white
+            ${isSelected ? 'bg-success' : 'bg-linear-to-r from-[#4F39F6] to-[#9514FA]'}
+            disabled:text-white disabled:opacity-70 disabled:cursor-not-allowed`}
+                            disabled={isSelected}>
+                            {isSelected ? (
+                                <>
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                                    </svg>
+                                    Added to Cart
+                                </>
+                            ) : (
+                                'Buy Now'
+                            )}
+                        </button>
                     </div>
                 </div>
             </div>

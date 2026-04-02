@@ -1,21 +1,22 @@
-import React, { Suspense } from 'react';
+import React, { Suspense, useEffect, useState } from 'react';
 import Card from './Card';
 
-const cardData = async () => {
-    const res = await fetch('/Data.json')
-    return res.json();
-}
+const AvailableCard = ({ cartsCard, setCartsCard }) => {
 
-const AvailableCard = ({ cartsCard , setCartsCard }) => {
-    const cardsData = cardData();
+    const [data, setData] = useState([]);
+
+    useEffect(() => {
+        fetch('./Data.json')
+            .then(res => res.json())
+            .then(data => setData(data));
+    }, []);
+
     return (
-            < div >
-            <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
-                <Card cardsData={cardsData} cartsCard={cartsCard} setCartsCard={setCartsCard}></Card>
-            </Suspense>
+        < div >
+            {/* <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
+            </Suspense> */}
+            <Card data={data} cartsCard={cartsCard} setCartsCard={setCartsCard}></Card>
         </div >
-
-        
     );
 };
 
