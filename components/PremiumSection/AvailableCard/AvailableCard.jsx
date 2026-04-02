@@ -6,14 +6,16 @@ const cardData = async () => {
     return res.json();
 }
 
-const AvailableCard = () => {
+const AvailableCard = ({ cartsCard , setCartsCard }) => {
     const cardsData = cardData();
     return (
             < div >
             <Suspense fallback={<span className="loading loading-bars loading-xl"></span>}>
-                <Card cardsData={cardsData}></Card>
+                <Card cardsData={cardsData} cartsCard={cartsCard} setCartsCard={setCartsCard}></Card>
             </Suspense>
         </div >
+
+        
     );
 };
 

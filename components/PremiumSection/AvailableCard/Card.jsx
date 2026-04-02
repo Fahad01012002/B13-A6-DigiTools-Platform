@@ -1,56 +1,17 @@
 import React, { use } from 'react';
-import image from '../../../assets/products/writing_2327400 1.png'
+import CardDisplay from './CardsDisplay/CardDisplay';
 
-const Card = ({ cardsData }) => {
+const Card = ({ cardsData , cartsCard , setCartsCard }) => {
 
     const Data = use(cardsData);
     return (
         <div className='grid grid-cols-3 gap-5'>
             {
-                Data.map(data => {
+               Data.map((data, index) => {
                     return (
-                        <div className=''>
-                            <div className="card bg-base-100 shadow-sm">
-                                <div className="card-body">
-                                    <span
-                                        className={`badge badge-xs ${data.tagType === 'best-seller'
-                                                ? 'badge_warning'
-                                                : data.tagType === 'popular'
-                                                    ? 'badge_success'
-                                                    : data.tagType === 'new'
-                                                        ? 'badge_purple'
-                                                        : ''
-                                            }`}
-                                    >
-                                        {data.tag}
-                                    </span>
-                                    <div className='p-3 border border-gray-200 rounded-full w-15'><img className='w-8' src={data.image} alt="" /></div>
-                                    <div className="space-y-4 mb-4">
-                                        <h2 className="font-bold text-[24px]">{data.name}</h2>
-                                        <p className='text-[#627382]'>{data.description}</p>
-                                        <span className=""><span className='font-bold text-[24px]'>${data.price}</span>/Mo</span>
-                                    </div>
-                                    <ul className="mt-6 flex flex-col gap-2 text-xs">
-                                        {
-                                            data.features.map(feature => {
-                                                return (
-                                                    <li>
-                                                        <svg xmlns="http://www.w3.org/2000/svg" className="size-4 me-2 inline-block text-success" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" /></svg>
-                                                        <span className='font-medium text-[15px]'>{feature}</span>
-                                                    </li>
-                                                )
-                                            })
-                                        }
-                                    </ul>
-
-                                    <div className="mt-6">
-                                        <button className="btn btn-block rounded-full bg-[#4F39F6] text-white">Buy Now</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <CardDisplay data={data} key={index} cartsCard={cartsCard} setCartsCard={setCartsCard} />
                     )
-                })
+               })
             }
         </div>
     );

@@ -1,14 +1,14 @@
-import { CardSim, PackagePlus } from 'lucide-react';
 import React, { useState } from 'react';
 import AvailableCard from './AvailableCard/AvailableCard';
 import CartsCard from './CartCard/CartsCard';
 
+
+
 const PremiumSection = () => {
 
-    const [handleButton , setHandleButton] = useState('products');
-    // const handleButton = ()=> {
 
-    // }
+    const [handleButton , setHandleButton] = useState('products');
+    const [cartsCard , setCartsCard] = useState([]);
 
     return (
         <div className='space-y-3'>
@@ -18,11 +18,11 @@ const PremiumSection = () => {
             </div>
             <div className='text-center space-x-2'>
                 <button onClick={() => setHandleButton('products')} className={`btn rounded-[20px] ${handleButton === 'products' ? 'bg-[#4F39F6] text-white' : "bg-white"}`}>Products</button>
-                <button onClick={() => setHandleButton('carts')} className={`btn rounded-[20px] ${handleButton === 'carts' ? 'bg-[#4F39F6] text-white' : "bg-white"}`}>Cart ( 0 ) </button>
+                <button onClick={() => setHandleButton('carts')} className={`btn rounded-[20px] ${handleButton === 'carts' ? 'bg-[#4F39F6] text-white' : "bg-white"}`}>Cart ( {cartsCard.length} ) </button>
             </div>
 
             {
-                handleButton === 'products' ? <AvailableCard /> : <CartsCard />
+                handleButton === 'products' ? <AvailableCard cartsCard={cartsCard} setCartsCard={setCartsCard}  /> : <CartsCard cartsCard={cartsCard} setCartsCard={setCartsCard} />
             }
         </div>
     );

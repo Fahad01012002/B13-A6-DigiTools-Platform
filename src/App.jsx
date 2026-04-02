@@ -1,3 +1,4 @@
+import { ToastContainer } from 'react-toastify'
 import Banner from '../components/Banner/Banner'
 import Mark from '../components/Mark/Mark'
 import Navbar from '../components/Navbar/Navbar'
@@ -17,7 +18,10 @@ function App() {
       </div>
       <div className='w-11/12 mx-auto manrope'>
           <PremiumSection />
+          
       </div>
+
+      <ToastContainer/>
     </>
   )
 }
