@@ -11,10 +11,10 @@ const PriceCard = () => {
     }, []);
 
     return (
-        <div className='grid grid-cols-3 gap-5'>
+        <div className='grid md:grid-cols-3 md:gap-5'>
             {
                 data.map(item => (
-                    <div key={item.id} className={`relative p-4 rounded-xl shadow-sm flex flex-col justify-between space-y-5 mb-30 ${item.name === 'Pro' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white' : 'bg-gray-100'}`}>
+                    <div key={item.id} className={`relative p-4 rounded-xl shadow-sm flex flex-col justify-between md:space-y-5 mb-30 ${item.name === 'Pro' ? 'bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white' : 'bg-gray-100'}`}>
                         <span className={`absolute -top-3 left-45 badge bg-[#FEF3C6] text-[#BB4D00] rounded-full ${item.id === 2 ? '' : 'hidden'}`}>{item.id === 2 ? 'Most Popular' : ''}</span>
                         <div>
                             <h2 className='font-bold text-[24px]'>{item.name}</h2>

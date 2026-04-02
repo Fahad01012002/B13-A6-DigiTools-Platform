@@ -5,7 +5,7 @@ import play from '../../assets/play.png';
 
 const GetStarted = () => {
     return (
-        <div className='grid grid-cols-3 gap-5 mb-30 mt-10'>
+        <div className='grid md:grid-cols-3 gap-5 mb-30 mt-10'>
             <div className='p-6 h-95 shadow-sm rounded-xl'>
                 <div className='relative'>
                     <h2 className='absolute top-2 right-2 text-end bg-linear-to-r from-[#4F39F6] to-[#9514FA] rounded-full px-2 py-1 text-white'>01</h2>

@@ -6,7 +6,7 @@ import instagram from '../../assets/Icon/Instagram.png';
 const Footer = () => {
     return (
         <div className='bg-[#101727] pt-30 pb-8'>
-            <div className='w-11/12 mx-auto items-center text-white grid grid-cols-8 gap-10'>
+            <div className='w-11/12 mx-auto items-center text-white grid md:grid-cols-8 gap-10'>
                 <div className='col-span-3 space-y-4'>
                     <h2 className='font-extrabold text-[40px]'>DigiTools</h2>
                     <p>Premium digital tools for creators, <br /> professionals, and businesses. Work smarter <br /> with our suite of powerful tools.</p>
@@ -47,11 +47,11 @@ const Footer = () => {
 
               <div className="divider divider-neutral w-11/12 mx-auto mt-20"></div>
 
-            <div className='flex justify-between items-center text-white w-11/12 mx-auto'>
+            <div className='md:flex justify-between items-center text-white w-11/12 mx-auto'>
                 <div>
                     <p>© 2026 Digitools. All rights reserved.</p>
                 </div>
-                <div className='flex justify-center gap-5'>
+                <div className='md:flex justify-center gap-5'>
                     <p>Privacy Policy</p>
                     <p>Terms of Service</p>
                     <p>Cookies</p>

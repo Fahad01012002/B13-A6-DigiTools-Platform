@@ -8,7 +8,7 @@ const Navbar = () => {
                 <h2 className='text-[#4F39F6] font-bold text-3xl'>DigiTools</h2>
             </div>
             <div>
-                <ul className='flex items-center gap-7 font-semibold cursor-pointer'>
+                <ul className='md:flex items-center gap-7 font-semibold cursor-pointer hidden'>
                     <li className='hover:text-[#4F39F6]'>Products</li>
                     <li className='hover:text-[#4F39F6]'>Features</li>
                     <li className='hover:text-[#4F39F6]'>Pricing</li>

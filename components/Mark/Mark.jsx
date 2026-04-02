@@ -2,7 +2,7 @@ import React from 'react';
 
 const Mark = () => {
     return (
-        <div className='flex justify-around items-center p-15 bg-linear-to-r from-[#4F39F6] to-[#9514FA] mb-30'>
+        <div className='flex justify-around items-center p-15 bg-[#4F39F6] mb-30'>
             <div>
                 <h2 className='font-extrabold text-[60px] text-white'>50K+</h2>
                 <p className='font-medium text-[24px] text-white'>Active Users</p>

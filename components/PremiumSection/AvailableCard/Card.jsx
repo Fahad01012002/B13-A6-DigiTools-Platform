@@ -3,7 +3,7 @@ import CardDisplay from './CardsDisplay/CardDisplay';
 const Card = ({ data , cartsCard , setCartsCard }) => {
 
     return (
-        <div className='grid grid-cols-3 gap-5'>
+        <div className='grid md:grid-cols-3 gap-5'>
             {
                data.map((data, index) => {
                     return (
